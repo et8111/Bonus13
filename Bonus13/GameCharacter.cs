@@ -55,14 +55,13 @@ namespace Bonus13
     {
         public int spellNumber { get; set; }
 
-        public Wizard(string name, int strength, int intelligence, int spellnum, int ENERGY): base(name, strength,intelligence, ENERGY)
+        public Wizard(string name, int strength, int intelligence, int ENERGY, int spellnum ): base(name, strength,intelligence, ENERGY)
         {
             spellNumber = spellnum;
         }
         public override void Play()
         {
             Console.WriteLine($"Name: {Name}| Str: {Strength}| Int: {Intelligence}| MgcEng: {magicEnergy}| SpellNumber: {spellNumber}");
-
         }
     }
 }

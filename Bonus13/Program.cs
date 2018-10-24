@@ -10,9 +10,11 @@ namespace Bonus13
     {
         static void Main(string[] args)
         {
-            GameCharacter[] characters = new GameCharacter[5] {new Warrior("GRONK", 20, 2, "FIST"), new Warrior("Kevin", 11,9,"Dager"), new Wizard("Marin",2,19,5,11),new Wizard("Bradley Beal",9,9,3,9),new Wizard("BARRY THE BATTLE WIZARD",18,6,8,8)};
+            GameCharacter[] characters = new GameCharacter[5] {new Warrior("GRONK", 20, 2, "FIST"), new Warrior("Kevin", 11,11,"Dagger"), new Wizard("Marin",2,19,5,11),new Wizard("Bradley Beal",10,9,0,6),new Wizard("BARRY THE BATTLE WIZARD",18,5,8,1)};
             foreach (var v in characters)
                 v.Play();
+
+
         }
     }
 }
