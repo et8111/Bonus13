@@ -19,9 +19,9 @@ namespace Bonus13
             Intelligence = intelligence;
         }
 
-        public virtual void Play()
+        public virtual string Play()
         {
-            Console.WriteLine($"Name: {Name}| Str: {Strength}| Int: {Intelligence}");
+            return $"Name: {Name}| Str: {Strength}| Int: {Intelligence}";
         }
     }
 
@@ -32,9 +32,9 @@ namespace Bonus13
         {
             weaponType = weapon;
         }
-        public override void Play()
+        public override string Play()
         {
-            Console.WriteLine($"Name: {Name}| Str: {Strength}| Int: {Intelligence}| Weapon: {weaponType}");
+            return $"{base.Play()}| Weapon: {weaponType}";
         }
     }
 
@@ -45,9 +45,9 @@ namespace Bonus13
         {
             magicEnergy = ENERGY;
         }
-        public override void Play()
+        public override string Play()
         {
-            Console.WriteLine($"Name: {Name}| Str: {Strength}| Int: {Intelligence}| MgcEng: {magicEnergy}");
+            return $"{base.Play()}| MgcEng: {magicEnergy}";
         }
     }
 
@@ -59,9 +59,9 @@ namespace Bonus13
         {
             spellNumber = spellnum;
         }
-        public override void Play()
+        public override string Play()
         {
-            Console.WriteLine($"Name: {Name}| Str: {Strength}| Int: {Intelligence}| MgcEng: {magicEnergy}| SpellNumber: {spellNumber}");
+            return $"{base.Play()}| SpellNumber: {spellNumber}";
         }
     }
 }
